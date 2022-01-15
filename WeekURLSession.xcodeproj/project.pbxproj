@@ -13,6 +13,10 @@
 		DE5144AB2792D8DD00146531 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5144A92792D8DD00146531 /* Main.storyboard */; };
 		DE5144AD2792D8DE00146531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5144AC2792D8DE00146531 /* Assets.xcassets */; };
 		DE5144B02792D8DE00146531 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5144AE2792D8DE00146531 /* LaunchScreen.storyboard */; };
+		DE5144B92792DF6F00146531 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5144B82792DF6F00146531 /* Network.swift */; };
+		DE5144BB2792DFB700146531 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5144BA2792DFB700146531 /* JSONParser.swift */; };
+		DE5144BE2792E06800146531 /* ProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5144BD2792E06800146531 /* ProductsList.swift */; };
+		DE5144C02792E07400146531 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5144BF2792E07400146531 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		DE5144AC2792D8DE00146531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5144AF2792D8DE00146531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE5144B12792D8DE00146531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5144B82792DF6F00146531 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DE5144BA2792DFB700146531 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		DE5144BD2792E06800146531 /* ProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsList.swift; sourceTree = "<group>"; };
+		DE5144BF2792E07400146531 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		DE5144A22792D8DD00146531 /* WeekURLSession */ = {
 			isa = PBXGroup;
 			children = (
+				DE5144BC2792DFBB00146531 /* Model */,
+				DE5144B72792DF5E00146531 /* Util */,
 				DE5144A32792D8DD00146531 /* AppDelegate.swift */,
 				DE5144A52792D8DD00146531 /* SceneDelegate.swift */,
 				DE5144A72792D8DD00146531 /* ViewController.swift */,
@@ -65,6 +75,24 @@
 				DE5144B12792D8DE00146531 /* Info.plist */,
 			);
 			path = WeekURLSession;
+			sourceTree = "<group>";
+		};
+		DE5144B72792DF5E00146531 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DE5144B82792DF6F00146531 /* Network.swift */,
+				DE5144BA2792DFB700146531 /* JSONParser.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DE5144BC2792DFBB00146531 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE5144BD2792E06800146531 /* ProductsList.swift */,
+				DE5144BF2792E07400146531 /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5144A82792D8DD00146531 /* ViewController.swift in Sources */,
+				DE5144BB2792DFB700146531 /* JSONParser.swift in Sources */,
 				DE5144A42792D8DD00146531 /* AppDelegate.swift in Sources */,
+				DE5144B92792DF6F00146531 /* Network.swift in Sources */,
 				DE5144A62792D8DD00146531 /* SceneDelegate.swift in Sources */,
+				DE5144BE2792E06800146531 /* ProductsList.swift in Sources */,
+				DE5144C02792E07400146531 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
